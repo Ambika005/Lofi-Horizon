@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lofi Horizon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Main Player View -->
+  <div id="playerView" class="view active">
+    <!-- Background Video -->
+    <video id="backgroundVideo" autoplay loop muted playsinline>
+      <source id="videoSource" src="" type="video/mp4">
+    </video>
+
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Content Container -->
+    <div class="content">
+      <!-- Header with Menu Button -->
+      <div class="header">
+        <div class="title-container">
+          <div class="title">Lofi Horizon</div>
+          <div class="subtitle">~ relax & focus ~</div>
+        </div>
+      </div>
+
+      <!-- Track Info Display -->
+      <div class="track-info">
+        <div class="track-name" id="currentTrackName">Select a track</div>
+        <div class="track-scene" id="currentSceneName">Select a scene</div>
+      </div>
+
+      <!-- Audio Element -->
+      <audio id="audioPlayer" preload="metadata">
+        <source id="audioSource" src="" type="audio/mpeg">
+      </audio>
+
+      <!-- Three-Section Control Bar -->
+      <div class="controls">
+        <!-- Left: Play/Pause Button -->
+        <button id="playPauseBtn" class="play-pause-btn">
+          <span class="btn-icon">▶</span>
+        </button>
+
+        <!-- Center: Progress Bar (Flexible) -->
+        <div class="progress-container">
+          <input type="range" id="progressBar" class="progress-bar" min="0" max="100" value="0" step="0.1">
+          <div class="time-display">
+            <span id="currentTime">00:00</span>
+            <span id="totalTime">00:00</span>
+          </div>
+        </div>
+
+        <!-- Right: Menu Button -->
+        <button id="menuBtn" class="menu-btn" title="Browse Tracks & Videos">
+          <span class="bento-icon">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+
+      <!-- Now Playing Marquee -->
+      <div class="now-playing-marquee">
+        <div class="marquee-content" id="marqueeContent">
+          <span class="marquee-text">now playing: <span id="marqueeTrack">select a track to start</span> • scene: <span
+              id="marqueeScene">choose your vibe</span></span>
+          <span class="marquee-text">now playing: <span id="marqueeTrack2">select a track to start</span> • scene: <span
+              id="marqueeScene2">choose your vibe</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Selection View -->
+  <div id="selectionView" class="view selection-view">
+    <!-- Selection Header -->
+    <div class="selection-header">
+      <div class="selection-title">
+        <h2>Sounds & Scenes</h2>
+        <p>Choose your vibe</p>
+      </div>
+      <button id="backBtn" class="back-btn">← Back</button>
+      <div class="view-toggle">
+        <button id="showTracksBtn" class="toggle-btn active">🎵 Tracks</button>
+        <button id="showVideosBtn" class="toggle-btn">🎬 Scenes</button>
+        <button id="loopBtn" class="loop-btn" title="Loop Current Track">
+          <svg class="loop-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 2L21 6L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M3 12V9C3 7.93913 3.42143 6.92172 4.17157 6.17157C4.92172 5.42143 5.93913 5 7 5H21"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7 22L3 18L7 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M21 12V15C21 16.0609 20.5786 17.0783 19.8284 17.8284C19.0783 18.5786 18.0609 19 17 19H3"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Tracks List -->
+    <div id="tracksContainer" class="selection-container active">
+      <div class="selection-grid" id="tracksList">
+        <!-- Tracks will be dynamically populated -->
+      </div>
+    </div>
+
+    <!-- Videos List -->
+    <div id="videosContainer" class="selection-container">
+      <div class="selection-grid" id="videosList">
+        <!-- Videos will be dynamically populated -->
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
