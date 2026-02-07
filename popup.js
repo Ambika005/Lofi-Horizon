@@ -103,8 +103,8 @@ function init() {
     if (result.currentVideo !== undefined) {
       selectVideo(result.currentVideo);
     } else {
-      // Set "Wistful Moments" as default scene (index 12)
-      selectVideo(12);
+      // Set "Wistful Moments" as default scene (index 0)
+      selectVideo(0);
     }
     // Load loop state
     if (result.isLooping !== undefined) {
@@ -241,8 +241,8 @@ function selectTrack(index, playImmediately = false) {
 function selectVideo(index) {
   // Safety check: ensure index is valid
   if (index < 0 || index >= VIDEOS.length) {
-    console.warn(`Invalid video index: ${index}. Defaulting to video 12 (Wistful Moments).`);
-    index = 12;
+    console.warn(`Invalid video index: ${index}. Defaulting to video 0 (Wistful Moments).`);
+    index = 0;
   }
 
   currentVideo = index;
