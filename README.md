@@ -1,21 +1,23 @@
 # 🎵 Lofi Horizon
 
-> A beautiful Chrome extension for lofi music lovers. Relax, focus, and vibe with curated lofi tracks and stunning animated scenes.
+> A beautiful Chrome extension for lofi music lovers with over 10+ beautiful scenes and tracks to choose from. Relax, focus, and vibe with curated lofi tracks and stunning animated scenes. Now featuring Cloudinary-powered media streaming for optimal performance.
 
-![Lofi Horizon](https://img.shields.io/badge/version-1.0.0-pink?style=for-the-badge)
+![Lofi Horizon](https://img.shields.io/badge/version-1.0.1-pink?style=for-the-badge)
 ![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
 ## ✨ Features
 
 ### 🎧 Curated Lofi Tracks
-- **20+ Premium Tracks**: Hand-picked lofi beats perfect for studying, working, or relaxing
+- **Over 10+ Premium Tracks**: Hand-picked lofi beats perfect for studying, working, or relaxing
+- **Cloudinary-Powered Streaming**: Fast, reliable audio delivery with optimized cloud storage
 - **Autoplay**: Seamlessly transitions to the next track when one ends
 - **Loop Mode**: Repeat your favorite track endlessly with the elegant loop button
 - **Background Playback**: Music continues playing even when you close the popup
 
 ### 🎬 Stunning Animated Scenes
-- **20+ Beautiful Scenes**: Carefully selected lofi-inspired video backgrounds
+- **Over 10+ Beautiful Scenes**: Carefully selected lofi-inspired video backgrounds
+- **Cloud-Hosted Videos**: Smooth playback powered by Cloudinary CDN
 - **Synchronized Experience**: Music and visuals create the perfect ambient atmosphere
 - **Smooth Transitions**: Elegant scene switching with no interruptions
 
@@ -66,8 +68,8 @@
 3. **Browse Content**: Click the menu button (⋮⋮⋮) to explore all tracks and scenes
 
 ### Browsing Tracks & Scenes
-- **Tracks Tab**: Browse 20+ lofi tracks with compact, streamlined cards
-- **Scenes Tab**: Explore beautiful animated backgrounds with video previews
+- **Tracks Tab**: Browse 21 lofi tracks with compact, streamlined cards
+- **Scenes Tab**: Explore 22 beautiful animated backgrounds with video previews
 - **Loop Button**: Toggle loop mode (🔁) to repeat the current track
 - **Selection**: Click any track or scene to select it (won't auto-redirect)
 
@@ -97,6 +99,7 @@ Lofi Horizon embraces the aesthetic principles of lofi culture:
 - **CSS3**: Glassmorphism, animations, responsive design
 - **Vanilla JavaScript**: No frameworks, pure performance
 - **Chrome Extension APIs**: Background scripts, storage, messaging
+- **Cloudinary**: Cloud-based media storage and delivery for audio and video
 - **SVG Icons**: Scalable, theme-aware graphics
 
 ## 📁 Project Structure
@@ -106,16 +109,16 @@ Lofi-Horizon/
 ├── manifest.json           # Extension configuration
 ├── popup.html             # Main UI structure
 ├── popup.js               # UI logic and controls
-├── background.js          # Background audio player
+├── offscreen.html         # Offscreen audio player
+├── offscreen.js           # Audio playback logic
 ├── styles.css             # All styling and animations
-├── assets/                # Audio and video files
-│   ├── *.mp3             # Lofi tracks
-│   └── *.mp4             # Animated scenes
 ├── icons/                 # Extension icons
 │   ├── icon16.png
 │   ├── icon48.png
 │   └── icon128.png
 └── README.md             # You are here!
+
+Note: Audio and video files are hosted on Cloudinary for optimized delivery
 ```
 
 ## 🎵 Track List
