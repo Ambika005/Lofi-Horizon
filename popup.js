@@ -20,7 +20,6 @@ const TRACKS = [
   { file: 'https://res.cloudinary.com/dz2cthc1s/video/upload/v1770491264/london-lofi-315482_yvudds.mp3', name: 'London Streets', icon: '🚌' },
   { file: 'https://res.cloudinary.com/dz2cthc1s/video/upload/v1770491249/seaside-cafe-lofi-music-361057_mpvk20.mp3', name: 'Seaside Café', icon: '🌊' },
   { file: 'https://res.cloudinary.com/dz2cthc1s/video/upload/v1770491257/velvet-sky-dreams-lofi-beats-281186_xksokk.mp3', name: 'Velvet Sky Dreams', icon: '✨' },
- 
 ];
 
 const VIDEOS = [
