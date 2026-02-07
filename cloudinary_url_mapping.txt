@@ -1,0 +1,39 @@
+# Cloudinary URL Mapping Template
+
+Replace the placeholder URLs with your actual Cloudinary URLs for each video.
+
+## Instructions:
+1. For each video below, paste your Cloudinary URL next to the arrow
+2. Keep the format: filename.mp4 -> https://res.cloudinary.com/...
+3. Once complete, send me all the URLs and I'll update popup.js
+
+---
+
+stargazing-whiskers.mp4 -> 
+dawn-vigil.mp4 -> 
+warm-whisker-glow.mp4 -> 
+sunday-afternoon-purr.mp4 -> 
+dozing-in-the-dark.mp4 -> https://res.cloudinary.com/dz2cthc1s/video/upload/v1770486582/dozing-in-the-dark_dru3eb.mp4
+hearthside-solace.mp4 -> 
+ticket-to-nowhere.mp4 -> 
+city-light-watcher.mp4 -> 
+quiet-company.mp4 -> 
+bedroom-serenade.mp4 -> 
+loyal-afternoon.mp4 -> 
+unfinished-deadlines.mp4 -> 
+rain-soaked-steps.mp4 -> 
+tomorrows-plans.mp4 -> 
+puddle-party.mp4 -> 
+storm-lullaby.mp4 -> 
+againanother cat.mp4 -> 
+girlwithcat-cloudsaboveherheadatbalcony.mp4 -> 
+girlwithcat.mp4 -> 
+treehouse-withlightshanging.mp4 -> 
+young woman looking upward with a longing expression amidst blurry foliage.mp4 -> 
+Cat, train, retro free.mp4 -> 
+
+---
+
+Total videos: 22
+
+Note: I've already filled in the example you provided (dozing-in-the-dark.mp4)

@@ -1,0 +1,39 @@
+# Audio URL Mapping Template
+
+Replace the placeholder URLs with your actual Cloudinary URLs for each audio file.
+
+## Instructions:
+1. Upload all MP3 files from `/assets` to Cloudinary
+2. For each audio file below, paste your Cloudinary URL next to the arrow
+3. Keep the format: filename.mp3 -> https://res.cloudinary.com/...
+4. Once complete, send me all the URLs and I'll update popup.js
+
+---
+
+track.mp3 -> 
+clouds-passing-by.mp3 -> 
+glass-window-tears.mp3 -> 
+petals-in-the-wind.mp3 -> 
+december-embers.mp3 -> 
+cozy-evening.mp3 -> 
+study-session-echoes.mp3 -> 
+cafe-corner.mp3 -> 
+faded-polaroids.mp3 -> 
+dusty-grooves.mp3 -> 
+cat-cafe-lofi-309576.mp3 -> 
+chill-study-cozy-lofi-beat-442868.mp3 -> 
+laundromat-lofi-chill-309579.mp3 -> 
+endgame-theory-455563.mp3 -> 
+fading-neon-lights-lofi-beats-281197.mp3 -> 
+lofi-song-backyard-by-lofium-242713.mp3 -> 
+lofi-study-music-361055.mp3 -> 
+london-lofi-315482.mp3 -> 
+seaside-cafe-lofi-music-361057.mp3 -> 
+velvet-sky-dreams-lofi-beats-281186.mp3 -> 
+lofi-background-music-326931.mp3 -> 
+
+---
+
+Total audio tracks: 21 (unique files, excluding duplicates)
+
+Note: I've excluded duplicate files like "lofi-background-music-326931 (2).mp3" - you only need one URL for each unique track.
